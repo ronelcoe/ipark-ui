@@ -5,7 +5,8 @@ WORKDIR /app
 COPY . .
 # Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
 RUN npm ci \
-&& npm i react-router-dom@6 react-datetime-picker @mui/material @emotion/react @emotion/styled @mui/icons-material
+&& npm i react-router-dom@6 react-datetime-picker @mui/material @emotion/react @emotion/styled @mui/icons-material react-bootstrap bootstrap
+
 # Build the app
 RUN npm run build
 

@@ -5,10 +5,10 @@ import {
   Routes
 } from 'react-router-dom';
 
-import SearchParking from './search/pages/SearchParking';
 import NewPlace from './places/pages/NewPlace';
 import Header from './shared/components/Header';
 import Login_Reister from './user/components/Login_Reister';
+import Search from './search/pages/Search';
 
 var userIsRegistered = true;
 
@@ -18,11 +18,12 @@ function App() {
       <Header/>
       <Router>
         <Routes>
-          <Route path='/' element={<SearchParking/>} />
+          <Route path='/' element={<Search/>} />
           <Route path='/register' element={<Login_Reister isRegistered={userIsRegistered}/>} />
           <Route path='/places/new' element={<NewPlace/>} />
         </Routes>
       </Router>
+      
     </div>
   );
 }

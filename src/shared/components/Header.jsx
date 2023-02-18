@@ -1,31 +1,3 @@
-// import React from 'react';
-// import './LandingPage.css';
-
-// const LandingPage = () => {
-// 	return (
-// 	  <div className="landing-page">
-// 		<header className="header">
-// 		  <nav className="header-nav">
-// 			<a href="#">Home</a>
-// 			<a href="#">About</a>
-// 			<a href="#">Services</a>
-// 			<a href="#">Contact</a>
-// 		  </nav>
-// 		</header>
-// 		{/* <main className="main-content">
-// 		  <h1>Welcome to Our Landing Page</h1>
-// 		  <p>
-// 			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-// 			Integer euismod facilisis congue. Nam euismod est libero,
-// 			id dictum est dictum ac. Aliquam erat volutpat.
-// 		  </p>
-// 		</main> */}
-// 	  </div>
-// 	);
-//   };
-  
-//   export default LandingPage;
-
 import * as React from "react";
 
 // importing material UI components
@@ -36,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import Link from "@mui/material/Link";
 
 export default function Header() {
 return (
@@ -58,8 +31,8 @@ return (
 		default font weights and sizes */}
 
 		<Typography variant="h6"
-			component="div" sx={{ flexGrow: 1 }}>
-			iPark
+			component="div" sx={{ flexGrow: 1 }}
+			href="/"> iPark
 		</Typography>
 		<Button color="inherit" href="/register">Login</Button>
 		</Toolbar>
